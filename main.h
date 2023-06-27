@@ -7,6 +7,9 @@
 int _putchar(char c);
 int _puts(char *s);
 
+int _printf(const char *format, ...);
+int (*get_printer(char c))(va_list ap);
+
 
 typedef struct printer {
 	char c;

@@ -1,6 +1,13 @@
 #include "main.h"
 
-int (*get_printer(char c))(va_list ap)
+/**
+ * gets_printer - selects the printer to use
+ * @c: input character
+ *
+ * Return: pointer to the function
+ */
+
+int (*gets_printer(char c))(va_list args)
 {
 	int n;
 	int i;
