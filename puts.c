@@ -1,16 +1,16 @@
 #include "main.h"
 
 /**
- * _puts - prints a string
+ * puts - prints a string
  * @s: string to be printed
  * b :pointer to operate on the string without changing it
  *
  * Return: Always (0) Success returns the number of characters printed
  */
 
-int _puts(char *s)
+int puts(const char *s)
 {
-	char *b;
+	const char *b;
 
 	b = s;
 

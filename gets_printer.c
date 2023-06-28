@@ -13,9 +13,9 @@ int (*gets_printer(char c))(va_list args)
 	int i;
 
 	printer printers[] = {
-		{"c", print_c},
-		{"s", print_s},
-		{"%", print_mod}
+		{'c', print_c},
+		{'s', print_s},
+		{'%', print_mod}
 	};
 
 	n = 3;

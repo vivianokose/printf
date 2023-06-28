@@ -9,12 +9,15 @@
 
 int print_s(va_list args)
 {
-	char *s;
-	int n;
+	const char *s;
+	int n = 0, i;
 
-	s = va_arg(args, char *);
+	s = va_arg(args, const char *);
 
-	n = puts(s);
+	for (i = 0; s[i] != '\0'; i++)
+	{
+	n += _putchar(s[i]);
+	}
 
 	return (n);
 }

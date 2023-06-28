@@ -5,15 +5,18 @@
 #include <stdarg.h>
 
 int _putchar(char c);
-int _puts(char *s);
+int puts(const char *);
 
 int _printf(const char *format, ...);
-int (*get_printer(char c))(va_list ap);
+int (*get_printer(char c))(va_list args);
 
+int print_c(va_list args);
+int print_s(va_list args);
+int print_mod(va_list args);
 
 typedef struct printer {
 	char c;
-	int (*f)(va_list ap);
+	int (*f)(va_list args);
 } printer;
 
 #endif
