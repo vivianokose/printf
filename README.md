@@ -1,6 +1,6 @@
 #ALX SE printf Project Team Project
 
-_*Collaborators:* [Vivian](https://github.com/vivianokose) and [Ericl](http://github.com/ericogbekene)_
+_*Collaborators:* [Vivian](https://github.com/vivianokose) and [Eric](http://github.com/ericogbekene)_
 --
 -----
 ##Description
