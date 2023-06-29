@@ -32,10 +32,15 @@ int _printf(const char *format, ...)
 		switch (*p)
 		{
 			case 'c':
-				n += print_c(va_arg(args, int));
+				n += (char) print_c(va_arg(args, int));
 				break;
 			case 's':
-				n += print_s(va_arg(args));
+				/**
+				n += print_s(va_arg(args, char *));
+				*/
+				break;
+			case '%':
+				n += print_mod(args);
 				break;
 
 			default:

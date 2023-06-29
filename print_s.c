@@ -3,13 +3,14 @@
 /**
  * print_s - function that prints a string
  *
- * @args: input
+ * @c: character to print
  * Return: n
  */
 
-int print_s(va_list args)
+int print_s(const char *s)
 {
-	const char *s;
+	va_list args;
+
 	int n = 0, i;
 
 	s = va_arg(args, const char *);

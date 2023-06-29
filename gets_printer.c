@@ -24,7 +24,7 @@ int (*gets_printer(char c))(va_list args)
 
 	while (i < n)
 	{
-		if (printers[i].c == c)
+		if ((int) printers[i].c == (int)c)
 			return (printers[i].f);
 		i++;
 	}

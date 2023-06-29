@@ -11,7 +11,7 @@ int print_mod(va_list args)
 {
 	char c;
 
-	c = va_arg(args, int);
+	c = (char) va_arg(args, int);
 
 	_putchar(c);
 
