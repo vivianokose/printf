@@ -40,6 +40,7 @@ int _printf(const char *format, ...)
 			case '%':
 				n += print_mod();
 				break;
+			case 'i':
 			case 'd':
 				n += print_int(args);
 				break;
