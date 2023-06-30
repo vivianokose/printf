@@ -19,7 +19,8 @@ int print_s(va_list args);
 int print_mod(void);
 int print_int(va_list args);
 
-typedef struct printer {
+typedef struct printer
+{
 	char c;
 	int (*f)();
 } printer;

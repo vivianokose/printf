@@ -3,7 +3,7 @@
 /**
  * printf_int - prints an integer
  * @args: argument
- * 
+ *
  * Return: number of characters printed
  */
 
@@ -14,7 +14,7 @@ int print_int(va_list args)
 	int i = 1;
 	int last = n % 10;
 
-	n = n/10;
+	n = n / 10;
 	num = n;
 
 	if (last < 0)
@@ -28,7 +28,7 @@ int print_int(va_list args)
 
 	if (num > 0)
 	{
-		while (num / 10 !=0)
+		while (num / 10 != 0)
 		{
 			exp = exp * 10;
 			num = num / 10;
