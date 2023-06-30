@@ -3,7 +3,7 @@
 /**
  * print_mod - function that prints perecentage character
  *
- * @args: input
+ *
  * Return: 1
  */
 

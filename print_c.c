@@ -3,7 +3,7 @@
 /**
  * print_c - a function that prints a character
  *
- * @args: input
+ * @c: character input
  * Return: 1 - success
  */
 
