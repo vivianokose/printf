@@ -3,7 +3,7 @@
 /**
  * print_s - function that prints a string
  *
- * @s: character to print
+ * @args: character string as input
  * Return: n
  */
 
