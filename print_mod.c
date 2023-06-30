@@ -7,13 +7,9 @@
  * Return: 1
  */
 
-int print_mod(va_list args)
+int print_mod(void)
 {
-	char c;
-
-	c = (char) va_arg(args, int);
-
-	_putchar(c);
+	_putchar(37);
 
 	return (1);
 }

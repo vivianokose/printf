@@ -3,22 +3,32 @@
 /**
  * print_s - function that prints a string
  *
- * @c: character to print
+ * @s: character to print
  * Return: n
  */
 
-int print_s(const char *s)
+int print_s(va_list args)
 {
-	va_list args;
+	const char *s;
 
 	int n = 0, i;
 
 	s = va_arg(args, const char *);
 
-	for (i = 0; s[i] != '\0'; i++)
+	if (s == NULL)
 	{
-	n += _putchar(s[i]);
-	}
+		s = "NULL";
+		n = strlen(s);
 
-	return (n);
+		for (i = 0; i < n; i++)
+			_putchar(s[i]);
+		return (n);
+	}
+	else
+	{
+		n = strlen(s);
+		for (i = 0; i < n; i++)
+			_putchar(s[i]);
+		return (n);
+	}
 }

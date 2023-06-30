@@ -35,12 +35,13 @@ int _printf(const char *format, ...)
 				n += (char) print_c(va_arg(args, int));
 				break;
 			case 's':
-				/**
-				n += print_s(va_arg(args, char *));
-				*/
+				n += print_s(args);
 				break;
 			case '%':
-				n += print_mod(args);
+				n += print_mod();
+				break;
+			case 'd':
+				n += print_int(args);
 				break;
 
 			default:
